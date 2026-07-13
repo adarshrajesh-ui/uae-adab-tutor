@@ -15,4 +15,9 @@ Use the generated notebook rather than running this file on a laptop:
 
 `submission/notebooks/03_demo_uae_adab_tutor.ipynb`
 
+The final cell uses Colab's session proxy rather than the external
+`gradio.live` tunnel. It renders the chat inline and prints a clickable
+`https://localhost:...` label that opens the proxied interface in a separate
+tab. Keep the final cell running while using either view.
+
 A CUDA GPU with at least T4-class memory is required.

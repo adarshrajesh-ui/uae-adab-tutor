@@ -103,7 +103,8 @@ def test_demo_runtime_is_public_hash_locked_and_four_bit() -> None:
         "enable_thinking=False",
         "truncation=False",
         "do_sample=False",
-        "share=True",
+        "share=False",
+        "inline=True",
     ):
         assert required in source
     assert "HF_TOKEN" not in source
@@ -148,9 +149,10 @@ def test_canonical_demo_notebook_is_clean_and_embeds_exact_app() -> None:
     for required in (
         "T4 GPU or",
         "Runtime → Run all",
-        "temporary public Gradio share link",
+        "Colab's own session proxy",
         "adarshrajesh/uae-adab-tutor-qwen3-4b",
         "transformers==4.56.2",
+        "peft==0.19.1",
         "gradio==5.49.1",
     ):
         assert required in text

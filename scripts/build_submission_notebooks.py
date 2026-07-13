@@ -443,9 +443,12 @@ def build_reviewer_demo() -> dict:
                 3. loads the pinned Qwen3-4B base revision in 4-bit;
                 4. sends only `<uae_adab_tutor>default</uae_adab_tutor>` plus
                    the visible multi-turn history to the tuned model; and
-                5. prints a temporary public Gradio share link.
+                5. renders the chat through Colab's own session proxy and
+                   provides a link that opens it in a separate tab.
 
-                The link works only while this Colab runtime is connected.
+                The proxied link works only while this Colab runtime is
+                connected. It avoids the external `gradio.live` tunnel, which
+                can return a 504 even when the model is healthy.
                 There is no paid Hugging Face Space, login, Drive mount,
                 upload, API key, or persistent hosting step.
                 '''
@@ -453,7 +456,7 @@ def build_reviewer_demo() -> dict:
             code(
                 '''
                 !pip -q install --upgrade --no-cache-dir \
-                    transformers==4.56.2 peft==0.17.1 accelerate==1.10.1 \
+                    transformers==4.56.2 peft==0.19.1 accelerate==1.10.1 \
                     bitsandbytes==0.47.0 huggingface_hub==0.34.4 \
                     safetensors==0.6.2 sentencepiece==0.2.1 gradio==5.49.1
                 '''

@@ -332,7 +332,11 @@ def main() -> None:
     tutor = QwenAdabTutor()
     demo = build_demo(tutor)
     demo.queue(default_concurrency_limit=1, max_size=8).launch(
-        share=True,
+        # Use Colab's authenticated session proxy instead of the external
+        # gradio.live tunnel. Gradio renders both an inline app and an
+        # "https://localhost" link that opens the proxied UI in a new tab.
+        share=False,
+        inline=True,
         debug=True,
         show_error=True,
     )
