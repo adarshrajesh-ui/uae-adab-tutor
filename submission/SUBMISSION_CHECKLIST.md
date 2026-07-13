@@ -4,7 +4,7 @@
 
 - [x] Fixed GitHub, model, dataset, and temporary Colab destinations are
   recorded in `LINKS.md`, and their public repository shells resolve.
-- [ ] GitHub contains the curated project commit rather than an empty shell.
+- [x] GitHub contains the curated project commit rather than an empty shell.
 - [x] Dataset opens at <https://huggingface.co/datasets/adarshrajesh/uae-adab-tutor-600>
   and contains the actual card and files, not only `.gitattributes`.
 - [x] The dataset viewer reports 540 train plus 60 validation rows.
@@ -20,7 +20,7 @@
 
 ## Temporary Colab demo
 
-- [ ] The Colab launch link opens
+- [x] The Colab launch link opens
   `submission/notebooks/03_demo_uae_adab_tutor.ipynb`.
 - [ ] An L4 or A100 runtime loads the pinned base and expected adapter
   fingerprint.
@@ -31,16 +31,16 @@
 
 ## Curated GitHub release gate
 
-- [ ] `python scripts/validate_public_submission.py` exits successfully.
-- [ ] `python scripts/build_public_submission_release.py --check` confirms the
+- [x] `python scripts/validate_public_submission.py` exits successfully.
+- [x] `python scripts/build_public_submission_release.py --check` confirms the
   reviewer ZIP and manifest are reproducible.
-- [ ] `python -m pytest -q tests/test_public_submission_release.py` passes.
-- [ ] Canonical reviewer notebooks contain no credentials, personal local
+- [x] `python -m pytest -q tests/test_public_submission_release.py` passes.
+- [x] Canonical reviewer notebooks contain no credentials, personal local
   paths, saved outputs, or unresolved reviewer-path placeholders.
-- [ ] The candidate Git surface contains no `.env`, token, private key, model
+- [x] The candidate Git surface contains no `.env`, token, private key, model
   weight, raw transcript/caption, scraped payload, rejected candidate,
   reviewer trace, screenshot, or local output directory.
-- [ ] Every relative Markdown link resolves and the optional network check
+- [x] Every relative Markdown link resolves and the optional network check
   verifies the fixed public URLs and populated Hugging Face repositories.
 
 ## Demo video

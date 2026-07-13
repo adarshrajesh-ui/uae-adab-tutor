@@ -378,8 +378,16 @@ def validate_network_destinations() -> list[str]:
         github = request_json("https://api.github.com/repos/adarshrajesh-ui/uae-adab-tutor")
         if github.get("private") is not False or github.get("default_branch") != "main":
             errors.append("GitHub repository is not public on main")
+        # GitHub's repository-size field can lag immediately after the first
+        # push. Treat a public README on the default branch as authoritative
+        # evidence that the repository is populated.
         if int(github.get("size") or 0) <= 0:
-            errors.append("GitHub repository is still an empty shell")
+            readme_url = (
+                "https://raw.githubusercontent.com/adarshrajesh-ui/"
+                "uae-adab-tutor/main/README.md"
+            )
+            if request_status(readme_url) != 200:
+                errors.append("GitHub repository is still an empty shell")
     except Exception as exc:
         errors.append(f"GitHub repository check failed: {exc}")
 

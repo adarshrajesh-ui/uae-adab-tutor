@@ -5,14 +5,14 @@
     "sha256": "41d04e6124d871823ecf4c1f9152bdc327ef4d876450b1c36ead76c8b2bed5bd"
   },
   "archive": {
-    "bytes": 1769501,
+    "bytes": 1769666,
     "file": "uae_adab_reviewer_release.zip",
-    "sha256": "ffd4b8df50bfcd4e4d4cbb5bb8e3bac5dc20a0d8e44bb66afff6a72e038301ee"
+    "sha256": "0afccafa83d4cfd33a4cfaa2f236829d89cc84c8f3fb2c67f10f7926d657b649"
   },
   "content_manifest": {
     "archive_member": "PUBLIC_RELEASE_CONTENTS.json",
     "bytes": 10025,
-    "sha256": "9030e98f9b1eeb31980b87f56745a74ff18de37a9a06d720d058fcc9db72f79e"
+    "sha256": "699964d7f6eb494f1920ff5cc1fd753d1d75722b75aecfac425dc3ed56308d39"
   },
   "public_destinations": {
     "dataset": "https://huggingface.co/datasets/adarshrajesh/uae-adab-tutor-600",
