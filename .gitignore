@@ -1,0 +1,88 @@
+.env
+.env.*
+!.env.example
+understanding.md
+outputs/
+zeval/
+__pycache__/
+*.pyc
+.pytest_cache/
+.mypy_cache/
+.ruff_cache/
+.ipynb_checkpoints/
+research/scraped/
+research/grounded_v2/raw_arabic_sources/
+.venv/
+.DS_Store
+.claude/
+.cursor/
+.lavish/
+zshots/
+archived/
+research/scraped/
+*.audio.m4a
+
+# Local/private material that must never enter the reviewer-facing repository.
+private/
+secrets/
+credentials/
+*.pem
+*.key
+*.p12
+*.pfx
+*.mobileprovision
+
+# Model binaries are published through the model host, not Git.
+*.safetensors
+*.gguf
+*.ckpt
+*.pth
+*.pt
+
+# The full generation tree is 400+ MB and contains rejected candidates,
+# reviewer traces, and permission-bounded intermediates. The selected dataset
+# is published separately; the canonical Colab carries its locked payload.
+data/
+
+# Keep research prose and pipeline code public, but exclude downloaded or
+# generated source payloads, registries, transcripts, and model traces.
+research/**/*.json
+research/**/*.jsonl
+research/**/*.json3
+research/**/*.parquet
+research/**/*.csv
+research/**/*.tsv
+research/**/*.txt
+research/**/*.vtt
+research/**/*.srt
+research/**/*.m4a
+research/**/*.mp3
+research/**/*.wav
+research/**/*.webm
+research/**/*.mp4
+research/**/*.zip
+
+# Internal judge traces are not needed to reproduce the published aggregate
+# evaluation and can expose prompts or reviewer work product.
+evals/**/*review*_events*.jsonl
+
+# Historical paid-Space deployment path is retained locally but is outside the
+# temporary-Colab reviewer release.
+deploy/hf_space/
+deploy/exact_silver_v1_model_card.md
+deploy/publish_exact_silver_v1_adapter.py
+notebooks/deploy_exact_silver_v1_to_huggingface.ipynb
+notebooks/publish_exact_silver_v1_adapter.ipynb
+submission/notebooks/03_deploy_exact_silver_v1.ipynb
+scripts/build_exact_silver_hf_deploy_notebook.py
+tests/test_hf_space_deployment.py
+
+# Public cards disclose permission scope; underlying records and local
+# attestations remain owner-controlled.
+research/grounded_v3_quote/*PERMISSION_ATTESTATION*.md
+
+# Owner-controlled writing is intentionally outside this curated commit.
+brainlift.md
+
+# Formatting reference only; it is not a project deliverable.
+modelBrainlift.md

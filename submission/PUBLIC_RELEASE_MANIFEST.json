@@ -1,0 +1,24 @@
+{
+  "allowlist": {
+    "entries": 59,
+    "file": "submission/PUBLIC_RELEASE_FILES.txt",
+    "sha256": "41d04e6124d871823ecf4c1f9152bdc327ef4d876450b1c36ead76c8b2bed5bd"
+  },
+  "archive": {
+    "bytes": 1769501,
+    "file": "uae_adab_reviewer_release.zip",
+    "sha256": "ffd4b8df50bfcd4e4d4cbb5bb8e3bac5dc20a0d8e44bb66afff6a72e038301ee"
+  },
+  "content_manifest": {
+    "archive_member": "PUBLIC_RELEASE_CONTENTS.json",
+    "bytes": 10025,
+    "sha256": "9030e98f9b1eeb31980b87f56745a74ff18de37a9a06d720d058fcc9db72f79e"
+  },
+  "public_destinations": {
+    "dataset": "https://huggingface.co/datasets/adarshrajesh/uae-adab-tutor-600",
+    "github": "https://github.com/adarshrajesh-ui/uae-adab-tutor",
+    "model": "https://huggingface.co/adarshrajesh/uae-adab-tutor-qwen3-4b",
+    "temporary_colab": "https://colab.research.google.com/github/adarshrajesh-ui/uae-adab-tutor/blob/main/submission/notebooks/03_demo_uae_adab_tutor.ipynb"
+  },
+  "schema_version": "uae_adab_reviewer_release.v1"
+}

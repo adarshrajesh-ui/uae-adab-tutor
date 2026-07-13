@@ -1,0 +1,20 @@
+{
+  "files": {
+    "01_train_exact_silver_v1.ipynb": {
+      "bytes": 2209101,
+      "cells": 16,
+      "sha256": "640c053288d504f0b6e9a8ea01fcc54723cbe84e727f1a03aa27805f8c7d8fe5"
+    },
+    "02_evaluate_exact_silver_v1.ipynb": {
+      "bytes": 55102,
+      "cells": 14,
+      "sha256": "5b399460ff48ee8387c8e068a303466e145149ddfc3a1177fc40289302955056"
+    },
+    "03_demo_uae_adab_tutor.ipynb": {
+      "bytes": 16796,
+      "cells": 3,
+      "sha256": "a7ae70016e8076ae5f540bc125088848c5bbe51c7beeb56856c5e8feb478e324"
+    }
+  },
+  "schema_version": "uae_adab_submission_notebooks.v1"
+}

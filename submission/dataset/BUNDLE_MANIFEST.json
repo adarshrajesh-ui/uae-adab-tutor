@@ -1,0 +1,28 @@
+{
+  "archive": "uae_adab_hf_dataset_upload.zip",
+  "archive_bytes": 1260405,
+  "archive_sha256": "be883b2918f77fd5a0e98707eca9d0334f5fc34edbc033b7ce44a69e0cb7caa2",
+  "files": {
+    "README.md": {
+      "bytes": 7118,
+      "sha256": "5d355d5ea81b5aed9d557fde9e22b265967b084e797dea035737d66b49c9871f"
+    },
+    "release_limitation_ledger_600.jsonl": {
+      "bytes": 331450,
+      "sha256": "cb2705d7f29fb3924edbf9386ffc64023e23e3675bde47fef68a7896d5f9dee2"
+    },
+    "release_manifest.json": {
+      "bytes": 6973,
+      "sha256": "ef8b907a497444b83410bd2fdcff37c4eb3922d90e485638303b8e5342ba662b"
+    },
+    "train.jsonl": {
+      "bytes": 4635753,
+      "sha256": "990cdc7ca494a4e12efa1cc7a739030ef1412e1dd1a350f91b1d453e49a756a0"
+    },
+    "validation.jsonl": {
+      "bytes": 512755,
+      "sha256": "cf10c2e316c13da2e2ebf1c1edee18ebfd3784085440a00b8a8c31e71fa0ec1c"
+    }
+  },
+  "schema_version": "uae_adab_hf_dataset_upload_bundle.v1"
+}
